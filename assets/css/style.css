@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.road {
+    width: 450px;
+    height: 100vh;
+    border: 2px solid red;
+    background-image: url('../images/road.png');
+    background-size: cover;
+    background-position: 50% 50%;
+    animation: roadmove 4s infinite linear;
+
+}
+
+@keyframes roadmove {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 100vh;
+    }
+}
+
+#car {
+    width: 50px;
+}
